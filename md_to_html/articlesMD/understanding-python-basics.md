@@ -1,6 +1,19 @@
-# Understanding python
-
-Created: December 23, 2025 12:48 PM
+---
+Title: "Understanding Python Internals: Execution Model, Memory, and Garbage Collection"
+Created: "20 January 2023"
+Tags: 
+    - python
+    - cpython
+    - call-stack
+    - heap
+    - garbage-collection
+    - memory-management
+    - frames
+    - namespaces
+    - language-architecture
+Description: "This note explores how Python programs actually run under the hood, focusing on CPython’s execution model, call stack frames, heap-allocated objects, and garbage collection. It explains how names, references, lifetimes, and scopes interact, providing a clear mental model for understanding functions, memory behavior, and program execution across Python implementations."
+Image: "python_basics_img.png"
+---
 
 # Understanding python:
 

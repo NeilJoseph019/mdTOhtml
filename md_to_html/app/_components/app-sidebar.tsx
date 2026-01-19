@@ -18,17 +18,13 @@ import {
 const data = {
   navMain: [
     {
-      title: "Getting Started",
-      url: "#",
+      title: "Dashboard",
+      url: "/",
       items: [
         {
-          title: "Installation",
-          url: "#",
-        },
-        {
-          title: "Project Structure",
-          url: "#",
-        },
+          title: "Articles",
+          url: "/articles",
+        }
       ],
     },
     
@@ -37,9 +33,9 @@ const data = {
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar variant="floating" {...props}>
+    <Sidebar variant="floating" {...props} className="w-[16rem]">
       <SidebarHeader>
-        <SidebarMenu>
+        <SidebarMenu >
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
               <a href="#">
