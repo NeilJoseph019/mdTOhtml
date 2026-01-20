@@ -3,6 +3,7 @@ import fs from "fs"
 import path from "path"
 import matter from 'gray-matter'
 import { markdownToHtml } from '@/app/_utils/getArticle'
+import styles from './article.module.css'
 
 type slugProp = {
   params:  Promise<{
@@ -28,8 +29,9 @@ const ArticlePage = async ({params }: slugProp) => {
   const html = await markdownToHtml(content)
 
   return (
-    <article className="prose mx-auto">
-        <div className='text-center prose ' dangerouslySetInnerHTML={{ __html: html }} />
+    <article className={styles.container}>
+        <div className={styles.content} 
+        dangerouslySetInnerHTML={{ __html: html }} />
     </article>
   )
 }
