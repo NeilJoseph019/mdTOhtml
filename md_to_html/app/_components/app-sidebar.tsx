@@ -18,9 +18,13 @@ import {
 const data = {
   navMain: [
     {
-      title: "Dashboard",
-      url: "/",
+      title: "Core",
+      url: "#",
       items: [
+        {
+          title: "Dashboard",
+          url: "/",
+        },
         {
           title: "Articles",
           url: "/articles",

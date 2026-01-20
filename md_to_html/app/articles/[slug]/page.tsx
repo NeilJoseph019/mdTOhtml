@@ -29,7 +29,7 @@ const ArticlePage = async ({params }: slugProp) => {
 
   return (
     <article className="prose mx-auto">
-        <div className='prose ' dangerouslySetInnerHTML={{ __html: html }} />
+        <div className='text-center prose ' dangerouslySetInnerHTML={{ __html: html }} />
     </article>
   )
 }
